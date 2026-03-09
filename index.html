@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gesture Music Controller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <div class="player">
+      <img src="https://picsum.photos/300" class="album" />
+
+      <h3>Song</h3>
+      <p>Artist</p>
+
+      <div id="status">Hold anywhere to open the button menu</div>
+    </div>
+
+    <div id="radialMenu" class="hidden">
+      <div class="item up">Play</div>
+      <div class="item down">Pause</div>
+      <div class="item left">Prev</div>
+      <div class="item right">Next</div>
+      <div class="item upright">Vol +</div>
+      <div class="item downleft">Vol -</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
