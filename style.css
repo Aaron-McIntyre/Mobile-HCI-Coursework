@@ -1,1 +1,84 @@
+* {
+  user-select: none;
+}
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  color: white;
+  font-family: Arial;
+}
+
+.player {
+  width: 320px;
+  text-align: center;
+}
+
+.album {
+  width: 100%;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+#status {
+  margin-top: 20px;
+  color: #1db954;
+  font-weight: bold;
+}
+
+#radialMenu {
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.item {
+  position: absolute;
+  background: #2a2a2a;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.item.active {
+  background: #1db954;
+  transform: scale(1.2);
+}
+
+.up {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.down {
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left {
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.upright {
+  top: 10px;
+  right: -40px;
+}
+.downleft {
+  bottom: 10px;
+  left: -40px;
+}
